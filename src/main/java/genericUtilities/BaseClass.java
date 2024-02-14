@@ -110,6 +110,10 @@ public class BaseClass
 		System.out.println("------------------Database connection closed-------------------");
 	}
 	
-	
+	//Test line added for testing full operation
+	public void demo()
+	{
+		System.out.print("pull test");
+	}
 
 }
