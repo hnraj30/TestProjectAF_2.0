@@ -7,6 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import genericUtilities.BaseClass;
@@ -20,13 +22,14 @@ import objectRepository.ContactsPage;
 import objectRepository.CreateNewContactPage;
 import objectRepository.HomePage;
 import objectRepository.LoginPage;
-
+@Listeners(genericUtilities.ListenersImplimentationClass.class)
 public class CreateContactTest extends BaseClass
 {
-	@Test(groups = "SmokeSuite")
+	@Test(groups="RegressionSuite")
 	
 	public void createContactTest() throws IOException, InterruptedException
 	{		
+		
 		//Read all required data
 		String LASTNAME = eUtil.readDataFromExcelFile("Contacts", 1, 2);
 		System.out.println("LastName: "+LASTNAME);
@@ -34,25 +37,37 @@ public class CreateContactTest extends BaseClass
 		//Click on contacts link
 		HomePage hp = new HomePage(driver);
 		hp.clickOnContactsLink();
-		
+		Reporter.log("Clicked on contacts link");
 		//Click on create new contact Button
 		ContactsPage cp = new ContactsPage(driver);
 		cp.clickOnCreateContactImg();
+		Reporter.log("Clicked on create new contact button");
 		
 		//Create contact using mandatory fields
 		CreateNewContactPage cncp = new CreateNewContactPage(driver);
 		cncp.createNewContact(LASTNAME);
+		Reporter.log("Contact created");
 		
 		//Validation
 		ContactInfoPage cip = new ContactInfoPage(driver);
 		String contactHeader = cip.getContactHeaderText();
+		Reporter.log("Header captured");
+		
+		//Assert.fail();
 		Assert.assertTrue(contactHeader.contains(LASTNAME));
 		System.out.println(contactHeader);
 		
 		
-		
 	}
 	
+
+	
+	@Test(retryAnalyzer=genericUtilities.RetraAnalyzerImplementationClass.class)
+	public void demo()
+	{
+		Assert.fail();
+		
+	}
 	
 	
 

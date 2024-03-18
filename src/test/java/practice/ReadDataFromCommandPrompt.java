@@ -13,7 +13,6 @@ public class ReadDataFromCommandPrompt
 		
 		System.out.println(USERNAME);
 		System.out.println(PASSWORD);
-		
 
 	}
 

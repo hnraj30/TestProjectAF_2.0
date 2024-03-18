@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import genericUtilities.BaseClass;
@@ -11,16 +12,18 @@ import objectRepository.CreateNewOrganizationPage;
 import objectRepository.HomePage;
 import objectRepository.OrganizationInfoPage;
 import objectRepository.OrganizationsPage;
+@Listeners(genericUtilities.ListenersImplimentationClass.class)
 
 public class CreateOrganizationWithIndustryAndTypeTest extends BaseClass
 
 {
-	@Test(groups="RgressionSuite")
+	@Test(groups={"SmokeSuite","RegressionSuite"})
 	public void createOrgWithIndustryAndTypeTest() throws EncryptedDocumentException, IOException
 	{
 		String ORGNAME = eUtil.readDataFromExcelFile("Organization", 7, 2)+jUtil.getrandomNumber();
 		String INDUSTRY = eUtil.readDataFromExcelFile("Organization", 7, 3);
 		String TYPE = eUtil.readDataFromExcelFile("Organization", 7, 4);
+		
 		
 		System.out.println("OrgaName: "+ORGNAME+"Industry: "+INDUSTRY+"Type: "+TYPE);
 		

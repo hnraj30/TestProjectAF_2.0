@@ -15,7 +15,7 @@ public class CreateNewContactPage extends WebDriverUtility
 	@FindBy(name ="lastname") 
 	private WebElement lastNameEdt;
 	
-	@FindBy(xpath = "(//img[@src='themes/softed/images/select.gif'])[1]") 
+	@FindBy(xpath = "//input[@name='account_id']/following-sibling::img") 
 	private WebElement orgNameLookupIcon;
 
 	@FindAll({@FindBy(xpath = "(//input[@title='Save [Alt+S]'])[1]"),@FindBy(xpath = "(//input[@type='submit'])[1]")}) 
@@ -52,7 +52,7 @@ public class CreateNewContactPage extends WebDriverUtility
 		return leadSourceDD;
 	}
 		
-	//Buisiness libray
+	//Business library
 	
 	public void createNewContact(String LASTNAME)
 	{

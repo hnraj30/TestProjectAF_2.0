@@ -10,23 +10,35 @@ import genericUtilities.WebDriverUtility;
 public class HomePage extends WebDriverUtility
 {
 	//Declaration
+	@FindBy(xpath="//a[text()='Calendar']")
+	private WebElement calendarTab;
+	
+	@FindBy(xpath="(//a[text()='Leads'])[1]")
+	private WebElement leadsTab;
+	
 	@FindBy(xpath="//a[text()='Contacts']")
 	private WebElement contactsTab;
 	
 	@FindBy(xpath="//a[text()='Organizations']")
 	private WebElement organizationsTab;
 	
-	@FindBy(xpath="//a[text()='Leads']")
-	private WebElement leadsTab;
+	@FindBy(xpath="//a[.='Products']")
+	private WebElement productsTab;
+	
+	@FindBy(xpath="(//a[text()='Opportunities'])[1]")
+	private WebElement opportunitiesTab;
+
+	@FindBy(xpath="//a[text()='Documents']")
+	private WebElement documentsTab;
+	
+	@FindBy(xpath="//a[text()='Email']")
+	private WebElement emailTab;
 	
 	@FindBy(xpath="//img[@src='themes/softed/images/user.PNG']") 
 	private WebElement adminIcon;
 	
 	@FindBy(xpath="//a[text()='Sign Out']") 
 	private WebElement signOutlink;
-	
-	@FindBy(xpath="//a[.='Products']")
-	private WebElement productsTab;
 	
 	//Initialization
 	public HomePage(WebDriver driver)
@@ -36,16 +48,20 @@ public class HomePage extends WebDriverUtility
 	
 	//Utilization
 
+	public WebElement getCalendarTab() {
+		return calendarTab;
+	}
+	
+	public WebElement getLeadsTab() {
+		return leadsTab;
+	}
+	
 	public WebElement getContactsTab() {
 		return contactsTab;
 	}
 
 	public WebElement getOrganizationsTab() {
 		return organizationsTab;
-	}
-
-	public WebElement getLeadsTab() {
-		return leadsTab;
 	}
 
 	public WebElement getAdminIcon() {
@@ -60,8 +76,36 @@ public class HomePage extends WebDriverUtility
 		return productsTab;
 	}
 	
+	public WebElement getOpportunitiesTab() {
+		return opportunitiesTab;
+	}
 	
-	//Generic methods
+	public WebElement getDocumentsTab() {
+		return documentsTab;
+	}
+	
+	public WebElement getEmailTab() {
+		return emailTab;
+	}
+	
+	
+	//Business library
+	/**
+	 * This method clicks on calendar link
+	 */
+	public void clickOnCalendarLink()
+	{
+		calendarTab.click();
+	}
+	
+	/**
+	 * This method clicks on leads link
+	 */
+	public void clickOnLeadsLink()
+	{
+		leadsTab.click();
+	}
+	
 	/**
 	 * This method clicks on Organization link
 	 */
@@ -79,6 +123,40 @@ public class HomePage extends WebDriverUtility
 	}
 	
 	/**
+	 * This method clicks on Products link
+	 */
+	//Business library
+	public  void clickOnProductsTab()
+	{
+		productsTab.click();
+	}
+	
+	/**
+	 * This method clicks on opportunities link
+	 */
+	//Business library
+	public  void clickOnOpprtunitiesTab()
+	{
+		opportunitiesTab.click();
+	}
+	
+	/**
+	 * This method clicks on documents link
+	 */
+	public  void clickOnDocumentsTab()
+	{
+		documentsTab.click();
+	}
+	
+	/**
+	 * This method clicks on email link
+	 */
+	public  void clickOnEmailTab()
+	{
+		emailTab.click();
+	}
+	
+	/**
 	 * This method performs logout operation
 	 * @param driver
 	 * @throws InterruptedException
@@ -89,16 +167,4 @@ public class HomePage extends WebDriverUtility
 		Thread.sleep(2000);
 		signOutlink.click();
 	}
-	
-	/**
-	 * This method clicks on Products button
-	 */
-	//Business library
-	public  void clickOnProductsTab()
-	{
-		productsTab.click();
-	}
-	
-	
-
 }

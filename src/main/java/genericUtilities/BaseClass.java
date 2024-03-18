@@ -1,5 +1,7 @@
 package genericUtilities;
-
+/**
+ * 
+ */
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
@@ -40,7 +42,7 @@ public class BaseClass
 	//@Parameters("browser")
 	//@BeforeTest()
 	@BeforeClass(alwaysRun=true)
-	public void bcConfig() throws IOException
+	public void bcConfig(/*String BROWSER*/) throws IOException
 	{
 		String BROWSER = pUtil.readDataFromPropertyFile("browser");
 		String URL = pUtil.readDataFromPropertyFile("url");
@@ -60,8 +62,9 @@ public class BaseClass
 		{
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
-			System.out.println("Edge browser launched ");
+			System.out.println("Edge browser launched ");	
 		}
+		
 		else
 		{
 			System.out.println("Invalid browser ");

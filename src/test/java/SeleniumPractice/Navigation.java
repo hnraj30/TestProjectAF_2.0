@@ -1,4 +1,4 @@
-package basicSeleniumPractice;
+package SeleniumPractice;
 
 import java.time.Duration;
 import java.util.List;

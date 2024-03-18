@@ -28,11 +28,10 @@ public class JavaUtility
 	public String getSystemDate()
 	{
 		Date d = new Date();
-		SimpleDateFormat formatter = new SimpleDateFormat("dd-mm-yyyy-hh-mm-ss");
+		SimpleDateFormat formatter = new SimpleDateFormat("d-M-Y-H-m-S");
 		String date = formatter.format(d);
 		return date;
 		
 	}
-	
 
 }

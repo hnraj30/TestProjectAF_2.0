@@ -9,7 +9,7 @@ public class ContactInfoPage
 {
 	//Declaration
 	@FindBy(id="mouseArea_Last Name") 
-	private WebElement contactHeaderText;
+	private WebElement contactHeader;
 	
 	//initialization
 	public ContactInfoPage(WebDriver driver)
@@ -18,8 +18,8 @@ public class ContactInfoPage
 	}
 	
 	//Utilization
-	public WebElement getContactHeaderText1() {
-		return contactHeaderText;
+	public WebElement getContactHeader() {
+		return contactHeader;
 	}
 	
 	//Business library
@@ -29,7 +29,7 @@ public class ContactInfoPage
 	 */
 	public String getContactHeaderText()
 	{
-		return contactHeaderText.getText();
+		return contactHeader.getText();
 	}
 		
 

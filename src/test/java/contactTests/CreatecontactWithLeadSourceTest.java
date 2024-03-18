@@ -16,7 +16,7 @@ import objectRepository.HomePage;
 @Listeners(genericUtilities.ListenersImplimentationClass.class)
 public class CreatecontactWithLeadSourceTest extends BaseClass 
 {
-	@Test
+	@Test(groups={"SmokeSuite","RegressionSuite"})
 	
 	public void createcontactWithLeadSourceTest() throws EncryptedDocumentException, IOException
 	{

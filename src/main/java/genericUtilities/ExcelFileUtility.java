@@ -31,5 +31,21 @@ public class ExcelFileUtility
 		return value;
 		
 	}
+	
+	public Object [][] readMultipleDataFromExcelFile(String sheetName) throws EncryptedDocumentException, IOException
+	{
+		FileInputStream fise = FileInputStream(".\\src\\test\\resources\\TestData.xlsx");
+		Workbook wb = WorkbookFactory.create(fise);
+		
+		
+		return null;
+		
+	}
+
+	private FileInputStream FileInputStream(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
 
 }

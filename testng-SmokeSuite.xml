@@ -8,8 +8,8 @@
 	</groups>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="contactTests.CreateContactWithOrganizationTest"/>
       <class name="contactTests.CreateContactTest"/>
+      <class name="contactTests.CreatecontactWithLeadSourceTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

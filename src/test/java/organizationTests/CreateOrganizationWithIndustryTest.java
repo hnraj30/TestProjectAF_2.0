@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import genericUtilities.BaseClass;
@@ -20,10 +21,11 @@ import objectRepository.HomePage;
 import objectRepository.LoginPage;
 import objectRepository.OrganizationInfoPage;
 import objectRepository.OrganizationsPage;
+@Listeners(genericUtilities.ListenersImplimentationClass.class)
 
 public class CreateOrganizationWithIndustryTest extends BaseClass
 {
-	@Test
+	@Test(groups={"SmokeSuite","RegressionSuite"})
 	
 	public void createOrganizationWithIndustryTest() throws IOException, InterruptedException 
 	{			

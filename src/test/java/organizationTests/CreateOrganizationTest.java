@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import genericUtilities.BaseClass;
@@ -24,10 +25,11 @@ import objectRepository.HomePage;
 import objectRepository.LoginPage;
 import objectRepository.OrganizationInfoPage;
 import objectRepository.OrganizationsPage;
+@Listeners(genericUtilities.ListenersImplimentationClass.class)
 
 public class CreateOrganizationTest extends BaseClass
 {
-	@Test
+	@Test(groups = "RegressionSuite")
 	
 	public void createOrganizationTest() throws IOException, InterruptedException 
 	{
@@ -51,6 +53,8 @@ public class CreateOrganizationTest extends BaseClass
 		String orgHeader = oip.getHeaderText();
 		System.out.println(orgHeader);
 		Assert.assertTrue(orgHeader.contains(ORGNAME));
+		
+		//Assert.fail();
 		{
 			System.out.println(ORGNAME+"  Organization created successfully");
 		}
