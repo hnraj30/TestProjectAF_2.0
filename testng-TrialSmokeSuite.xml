@@ -17,7 +17,7 @@
       <class name="organizationTests.CreateOrganizationWithIndustryAndTypeTest"/>
       <class name="productTests.CreateProductTest"/>
       <class name="contactTests.CreatecontactWithLeadSourceTest"/>
-      <class name="leadTests.LeadTests"/>
+      <class name="leadTests.LeadTest"/>
       <class name="organizationTests.CreateOrganizationTest"/>
     </classes>
   </test> <!-- Test -->
