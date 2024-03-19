@@ -27,7 +27,7 @@ public class ArrayTranspose {
 		}
 		
 		//for handling heterogeneous elements
-		ArrayList al =new ArrayList();
+		//ArrayList al =new ArrayList();
 		
 		
 	}
