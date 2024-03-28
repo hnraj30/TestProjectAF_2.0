@@ -60,7 +60,7 @@ public class CreateContactTest extends BaseClass
 		
 	}
 	
-
+/*
 	
 	@Test(retryAnalyzer=genericUtilities.RetraAnalyzerImplementationClass.class)
 	public void demo()
@@ -69,6 +69,6 @@ public class CreateContactTest extends BaseClass
 		
 	}
 	
-	
+	*/
 
 }

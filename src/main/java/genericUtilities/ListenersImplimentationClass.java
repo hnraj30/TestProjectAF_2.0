@@ -80,7 +80,7 @@ public class ListenersImplimentationClass  implements ITestListener
 		String testScriptName = result.getMethod().getMethodName();
 		System.out.println("====Test script "+testScriptName+" execution skipped====");
 		
-		//Exception for failure
+		//Exception for skipped
 		System.out.println(result.getThrowable());
 		//Log for skip
 		test.log(Status.SKIP, testScriptName+" == skipped ==");

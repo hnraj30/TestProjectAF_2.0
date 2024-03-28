@@ -4,7 +4,7 @@
   <test thread-count="2" parallel="tests" name="TestRunner-Edge(failed)">
     <parameter name="browser" value="edge"/>
     <classes>
-      <class name="contactTests.CreateContactTest">
+      <class name="contactTests.CreatecontactWithLeadSourceTest">
         <methods>
           <include name="amConfig"/>
           <include name="bmConfig"/>
@@ -12,49 +12,25 @@
           <include name="acConfig"/>
           <include name="bsConfig"/>
           <include name="asConfig"/>
-          <include name="createContactTest"/>
-          <include name="demo"/>
+          <include name="createcontactWithLeadSourceTest"/>
         </methods>
-      </class> <!-- contactTests.CreateContactTest -->
-      <class name="organizationTests.CreateOrganizationTest">
-        <methods>
-          <include name="amConfig"/>
-          <include name="bcConfig"/>
-          <include name="bmConfig"/>
-          <include name="createOrganizationTest"/>
-          <include name="acConfig"/>
-          <include name="bsConfig"/>
-          <include name="asConfig"/>
-        </methods>
-      </class> <!-- organizationTests.CreateOrganizationTest -->
+      </class> <!-- contactTests.CreatecontactWithLeadSourceTest -->
     </classes>
   </test> <!-- TestRunner-Edge(failed) -->
   <test thread-count="2" parallel="tests" name="TestRunner-Firefox(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="contactTests.CreateContactTest">
+      <class name="contactTests.CreatecontactWithLeadSourceTest">
         <methods>
           <include name="amConfig"/>
           <include name="bmConfig"/>
           <include name="bcConfig"/>
           <include name="acConfig"/>
           <include name="bsConfig"/>
-          <include name="createContactTest"/>
           <include name="asConfig"/>
-          <include name="demo"/>
+          <include name="createcontactWithLeadSourceTest"/>
         </methods>
-      </class> <!-- contactTests.CreateContactTest -->
-      <class name="organizationTests.CreateOrganizationTest">
-        <methods>
-          <include name="amConfig"/>
-          <include name="bcConfig"/>
-          <include name="bmConfig"/>
-          <include name="createOrganizationTest"/>
-          <include name="acConfig"/>
-          <include name="bsConfig"/>
-          <include name="asConfig"/>
-        </methods>
-      </class> <!-- organizationTests.CreateOrganizationTest -->
+      </class> <!-- contactTests.CreatecontactWithLeadSourceTest -->
     </classes>
   </test> <!-- TestRunner-Firefox(failed) -->
 </suite> <!-- Failed suite [Suite] -->

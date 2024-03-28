@@ -39,12 +39,12 @@ public class BaseClass
 		System.out.println("------------------Database connection successful-------------------");
 	}
 	
-	//@Parameters("browser")
+	@Parameters("browser")
 	//@BeforeTest()
 	@BeforeClass(alwaysRun=true)
-	public void bcConfig(/*String BROWSER*/) throws IOException
+	public void bcConfig(String BROWSER) throws IOException
 	{
-		String BROWSER = pUtil.readDataFromPropertyFile("browser");
+		//String BROWSER = pUtil.readDataFromPropertyFile("browser");
 		String URL = pUtil.readDataFromPropertyFile("url");
 		if (BROWSER.equalsIgnoreCase("firefox"))
 		{
@@ -111,12 +111,6 @@ public class BaseClass
 	public void asConfig()
 	{
 		System.out.println("------------------Database connection closed-------------------");
-	}
-	
-	//Test line added for testing full operation
-	public void demo()
-	{
-		System.out.print("pull test");
 	}
 
 }
