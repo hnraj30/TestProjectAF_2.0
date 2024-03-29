@@ -50,17 +50,17 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\Maven_Projects\AutomationFramework_2.0\Rev-testng-CrossBrowserExecution.xml</span>
+                    <span>D:\Maven_Projects\AutomationFramework_2.0\Rev-testng-BatchExecution.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>2 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,27 +108,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="contactTests.CreateContactTest" class="method navigator-link" hash-for-method="createContactTest">createContactTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="organizationTests.CreateOrganizationTest" class="method navigator-link" hash-for-method="createOrganizationTest">createOrganizationTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="organizationTests.CreateOrganizationTest" class="method navigator-link" hash-for-method="createOrganizationTest">createOrganizationTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="contactTests.CreatecontactWithLeadSourceTest" class="method navigator-link" hash-for-method="createcontactWithLeadSourceTest">createcontactWithLeadSourceTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="contactTests.CreatecontactWithLeadSourceTest" class="method navigator-link" hash-for-method="createcontactWithLeadSourceTest">createcontactWithLeadSourceTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -156,35 +136,6 @@
                   <span class="method-name">createContactTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="createContactTest">
-                  </a> <!-- createContactTest -->
-                  <span class="method-name">createContactTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">contactTests.CreatecontactWithLeadSourceTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createcontactWithLeadSourceTest">
-                  </a> <!-- createcontactWithLeadSourceTest -->
-                  <span class="method-name">createcontactWithLeadSourceTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="createcontactWithLeadSourceTest">
-                  </a> <!-- createcontactWithLeadSourceTest -->
-                  <span class="method-name">createcontactWithLeadSourceTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
@@ -200,47 +151,27 @@
                   <span class="method-name">createOrganizationTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="createOrganizationTest">
-                  </a> <!-- createOrganizationTest -->
-                  <span class="method-name">createOrganizationTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Maven_Projects\AutomationFramework_2.0\Rev-testng-CrossBrowserExecution.xml</span>
+            <span class="header-content">D:\Maven_Projects\AutomationFramework_2.0\Rev-testng-BatchExecution.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;TestRunner-Firefox&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;genericUtilities.ListenersImplimentationClass&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;contactTests.CreateContactTest&quot;/&gt;
-      &lt;class name=&quot;contactTests.CreatecontactWithLeadSourceTest&quot;/&gt;
       &lt;class name=&quot;organizationTests.CreateOrganizationTest&quot;/&gt;
-      &lt;class name=&quot;contactTests.CreateContactTest&quot;/&gt;
-      &lt;class name=&quot;organizationTests.CreateOrganizationTest&quot;/&gt;
-      &lt;class name=&quot;contactTests.CreateContactTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestRunner-Firefox --&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;TestRunner-Edge&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;contactTests.CreateContactTest&quot;/&gt;
-      &lt;class name=&quot;contactTests.CreatecontactWithLeadSourceTest&quot;/&gt;
-      &lt;class name=&quot;organizationTests.CreateOrganizationTest&quot;/&gt;
-      &lt;class name=&quot;contactTests.CreateContactTest&quot;/&gt;
-      &lt;class name=&quot;organizationTests.CreateOrganizationTest&quot;/&gt;
-      &lt;class name=&quot;contactTests.CreateContactTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestRunner-Edge --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -252,10 +183,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TestRunner-Firefox (6 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">TestRunner-Edge (6 classes)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -276,18 +204,6 @@
                 <span class="method-in-group-name">createOrganizationTest</span>
                 <br/>
               </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">createcontactWithLeadSourceTest</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">SmokeSuite</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">createcontactWithLeadSourceTest</span>
-                <br/>
-              </div> <!-- method-in-group -->
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -305,36 +221,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createOrganizationTest')
-data.setCell(0, 2, 'organizationTests.CreateOrganizationTest')
-data.setCell(0, 3, 13152);
+data.setCell(0, 1, 'createContactTest')
+data.setCell(0, 2, 'contactTests.CreateContactTest')
+data.setCell(0, 3, 21143);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createOrganizationTest')
 data.setCell(1, 2, 'organizationTests.CreateOrganizationTest')
-data.setCell(1, 3, 12639);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'createContactTest')
-data.setCell(2, 2, 'contactTests.CreateContactTest')
-data.setCell(2, 3, 11846);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'createcontactWithLeadSourceTest')
-data.setCell(3, 2, 'contactTests.CreatecontactWithLeadSourceTest')
-data.setCell(3, 3, 11650);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'createContactTest')
-data.setCell(4, 2, 'contactTests.CreateContactTest')
-data.setCell(4, 3, 11047);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'createcontactWithLeadSourceTest')
-data.setCell(5, 2, 'contactTests.CreatecontactWithLeadSourceTest')
-data.setCell(5, 3, 10502);
+data.setCell(1, 3, 11779);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -354,62 +254,16 @@ return data;
                 <span class="reporter-method-output">Header captured</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">createcontactWithLeadSourceTest</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Clicked on contacts link</span>
-                <span class="reporter-method-output">Clicked on create new contact lookup image</span>
-                <span class="reporter-method-output">Contact created with lead source</span>
-                <span class="reporter-method-output">Header captured</span>
-                <span class="reporter-method-output">Header validated</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">createcontactWithLeadSourceTest</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Clicked on contacts link</span>
-                <span class="reporter-method-output">Clicked on create new contact lookup image</span>
-                <span class="reporter-method-output">Contact created with lead source</span>
-                <span class="reporter-method-output">Header captured</span>
-                <span class="reporter-method-output">Header validated</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">createContactTest</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Clicked on contacts link</span>
-                <span class="reporter-method-output">Clicked on create new contact button</span>
-                <span class="reporter-method-output">Contact created</span>
-                <span class="reporter-method-output">Header captured</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">contactTests.CreatecontactWithLeadSourceTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">bsConfig</span>
-                <br/>
-                <span class="ignored-method-name">asConfig</span>
-                <br/>
-                <span class="ignored-method-name">asConfig</span>
-                <br/>
-                <span class="ignored-method-name">bsConfig</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
               <span class="ignored-class-name">organizationTests.CreateOrganizationTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">asConfig</span>
-                <br/>
-                <span class="ignored-method-name">bsConfig</span>
-                <br/>
                 <span class="ignored-method-name">bsConfig</span>
                 <br/>
                 <span class="ignored-method-name">asConfig</span>
@@ -429,146 +283,57 @@ return data;
                 <span class="method-name">bsConfig</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">contactTests.CreatecontactWithLeadSourceTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">bcConfig(firefox)</span>
-                <span class="method-start">393 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">bcConfig(edge)</span>
-                <span class="method-start">393 ms</span>
+                <span class="method-name">bcConfig</span>
+                <span class="method-start">347 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">bmConfig</span>
-                <span class="method-start">4922 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">bmConfig</span>
-                <span class="method-start">5984 ms</span>
+                <span class="method-start">7931 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">createcontactWithLeadSourceTest</span>
-                <span class="method-start">7805 ms</span>
+                <span class="method-name">createContactTest</span>
+                <span class="method-start">17207 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">createcontactWithLeadSourceTest</span>
-                <span class="method-start">9179 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">amConfig</span>
-                <span class="method-start">19455 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">amConfig</span>
-                <span class="method-start">19681 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">acConfig</span>
-                <span class="method-start">22843 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">organizationTests.CreateOrganizationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">bcConfig(edge)</span>
-                <span class="method-start">22956 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">contactTests.CreatecontactWithLeadSourceTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class after">
-                <span class="method-name">acConfig</span>
-                <span class="method-start">23061 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">organizationTests.CreateOrganizationTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">bcConfig(firefox)</span>
-                <span class="method-start">23862 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">bmConfig</span>
-                <span class="method-start">26435 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">bmConfig</span>
-                <span class="method-start">28217 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">createOrganizationTest</span>
-                <span class="method-start">29330 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">createOrganizationTest</span>
-                <span class="method-start">31166 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">amConfig</span>
-                <span class="method-start">42482 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">amConfig</span>
-                <span class="method-start">43808 ms</span>
+                <span class="method-start">38357 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">acConfig</span>
-                <span class="method-start">45939 ms</span>
+                <span class="method-start">50588 ms</span>
               </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">organizationTests.CreateOrganizationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">bcConfig</span>
+                <span class="method-start">50790 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">bmConfig</span>
+                <span class="method-start">54018 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createOrganizationTest</span>
+                <span class="method-start">56291 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">amConfig</span>
+                <span class="method-start">68072 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">acConfig</span>
-                <span class="method-start">46012 ms</span>
+                <span class="method-start">71842 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">contactTests.CreateContactTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">bcConfig(edge)</span>
-                <span class="method-start">46054 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">bcConfig(firefox)</span>
-                <span class="method-start">46975 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">bmConfig</span>
-                <span class="method-start">49529 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">bmConfig</span>
-                <span class="method-start">51463 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">createContactTest</span>
-                <span class="method-start">52585 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">createContactTest</span>
-                <span class="method-start">54707 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">amConfig</span>
-                <span class="method-start">64433 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">amConfig</span>
-                <span class="method-start">65754 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">acConfig</span>
-                <span class="method-start">67778 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-class after">
-                <span class="method-name">acConfig</span>
-                <span class="method-start">69090 ms</span>
-              </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">asConfig</span>
-                <span class="method-start">70145 ms</span>
+                <span class="method-start">72298 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

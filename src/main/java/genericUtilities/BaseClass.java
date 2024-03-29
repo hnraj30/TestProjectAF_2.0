@@ -42,9 +42,9 @@ public class BaseClass
 	@Parameters("browser")
 	//@BeforeTest()
 	@BeforeClass(alwaysRun=true)
-	public void bcConfig(String BROWSER) throws IOException
+	public void bcConfig(/*String BROWSER*/) throws IOException
 	{
-		//String BROWSER = pUtil.readDataFromPropertyFile("browser");
+		String BROWSER = pUtil.readDataFromPropertyFile("browser");
 		String URL = pUtil.readDataFromPropertyFile("url");
 		if (BROWSER.equalsIgnoreCase("firefox"))
 		{

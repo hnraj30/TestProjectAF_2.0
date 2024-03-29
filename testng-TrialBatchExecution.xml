@@ -9,7 +9,7 @@
       <class name="contactTests.CreateContactWithOrganizationTest"/>
       <class name="contactTests.CreateContactTest"/>
       <class name="contactTests.CreatecontactWithLeadSourceTest"/>
-      <class name="leadTests.LeadTests"/>
+      <class name="leadTests.LeadTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
