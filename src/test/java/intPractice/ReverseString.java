@@ -1,4 +1,4 @@
-package interviewPractice;
+package intPractice;
 
 import com.mysql.cj.x.protobuf.MysqlxDatatypes.Array;
 

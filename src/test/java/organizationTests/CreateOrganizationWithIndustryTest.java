@@ -2,60 +2,52 @@ package organizationTests;
 
 import java.io.IOException;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import genericUtilities.BaseClass;
-import genericUtilities.ExcelFileUtility;
-import genericUtilities.JavaUtility;
-import genericUtilities.PropertyFileUtility;
-import genericUtilities.WebDriverUtility;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import objectRepository.CreateNewOrganizationPage;
 import objectRepository.HomePage;
-import objectRepository.LoginPage;
 import objectRepository.OrganizationInfoPage;
 import objectRepository.OrganizationsPage;
 @Listeners(genericUtilities.ListenersImplimentationClass.class)
 
 public class CreateOrganizationWithIndustryTest extends BaseClass
+
 {
 	@Test(groups={"SmokeSuite","RegressionSuite"})
-	
-	public void createOrganizationWithIndustryTest() throws IOException, InterruptedException 
-	{			
-		String ORGNAME = eUtil.readDataFromExcelFile("Organization", 4, 2)+jUtil.getrandomNumber();
-		System.out.println("Organization Name: "+ORGNAME);
-		String INDUSTRY = eUtil.readDataFromExcelFile("Organization", 4, 3);
-		System.out.println("Industry : "+INDUSTRY);
+	public void createOrgWithIndustryAndTypeTest() throws EncryptedDocumentException, IOException
+	{
+		String ORGNAME = eUtil.readDataFromExcelFile("Organization", 7, 2)+jUtil.getrandomNumber();
+		String INDUSTRY = eUtil.readDataFromExcelFile("Organization", 7, 3);
+		String TYPE = eUtil.readDataFromExcelFile("Organization", 7, 4);
 		
-		//Navigate to Organizations link 
+		
+		System.out.println("OrgaName: "+ORGNAME+"Industry: "+INDUSTRY+"Type: "+TYPE);
+		
+		
+		//navigate to org link
 		HomePage hp = new HomePage(driver);
 		hp.clickOnOrganizationLink();
 		
-		//Click on Create Organization look Up Image 
+		//click on create new organization look up icon
 		OrganizationsPage op = new OrganizationsPage(driver);
 		op.clickOnOrganizationLookUpImg();
 		
-		//Create Organization with Mandatory fields 
-		CreateNewOrganizationPage cnop = new CreateNewOrganizationPage(driver);
-		cnop.createNewOrganization(ORGNAME, INDUSTRY);
+		//create new organization
+		CreateNewOrganizationPage cnop =new CreateNewOrganizationPage(driver);
+		cnop.createNewOrganization(ORGNAME, INDUSTRY, TYPE);
 		
 		//Validation
 		OrganizationInfoPage oip = new OrganizationInfoPage(driver);
 		String orgHeader = oip.getHeaderText();
 		Assert.assertTrue(orgHeader.contains(ORGNAME));
-		System.out.println(orgHeader);
-				
-		Thread.sleep(2000);
-		//Logout application
+		System.out.println("OrgHeader:"+orgHeader);
 		
 	}
+	
 	
 
 }

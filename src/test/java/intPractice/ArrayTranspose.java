@@ -1,4 +1,4 @@
-package interviewPractice;
+package intPractice;
 
 import java.util.ArrayList;
 

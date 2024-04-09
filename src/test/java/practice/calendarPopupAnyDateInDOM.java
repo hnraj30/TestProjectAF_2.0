@@ -7,11 +7,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class calendarPopupAnyDateInDOM {
-	public static void main(String[]args)
+	public static void main(String[]args) throws InterruptedException
 	{
 		WebDriverManager.firefoxdriver().setup();
 		WebDriver driver = new FirefoxDriver();
@@ -19,6 +20,11 @@ public class calendarPopupAnyDateInDOM {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("http://www.makemytrip.com/");
 		
+		Thread.sleep(3000);
+		//Click on free space to dismiss banner add
+		Actions a = new Actions(driver);
+		a.moveToLocation(10, 10).click().perform();
+				
 		driver.findElement(By.xpath("//label[@for='fromCity']")).click();
 		driver.findElement(By.xpath("//input[@placeholder='From']")).sendKeys("Bengaluru");
 		

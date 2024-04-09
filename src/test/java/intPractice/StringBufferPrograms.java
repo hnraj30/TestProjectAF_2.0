@@ -1,4 +1,4 @@
-package interviewPractice;
+package intPractice;
 
 public class StringBufferPrograms {
 

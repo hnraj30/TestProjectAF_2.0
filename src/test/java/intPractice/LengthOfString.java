@@ -1,4 +1,4 @@
-package interviewPractice;
+package intPractice;
 
 public class LengthOfString {
 	public static void main(String[]args)

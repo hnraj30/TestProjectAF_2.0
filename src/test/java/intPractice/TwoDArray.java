@@ -1,4 +1,4 @@
-package interviewPractice;
+package intPractice;
 
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;

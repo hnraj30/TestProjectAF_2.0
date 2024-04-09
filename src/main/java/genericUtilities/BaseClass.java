@@ -39,7 +39,7 @@ public class BaseClass
 		System.out.println("------------------Database connection successful-------------------");
 	}
 	
-	@Parameters("browser")
+	//@Parameters("browser")
 	//@BeforeTest()
 	@BeforeClass(alwaysRun=true)
 	public void bcConfig(/*String BROWSER*/) throws IOException
